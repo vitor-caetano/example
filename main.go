@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Printf(stringutil.Reverse("!oG ,olleH from w"))
+	fmt.Printf(stringutil.Reverse("!oG ,olleH from ww"))
 }
