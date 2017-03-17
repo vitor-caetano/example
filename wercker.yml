@@ -44,3 +44,12 @@ build:
 #        name: go test
 #        code: |
 #          go test ./...
+
+deploy:
+ steps:
+   - internal/docker-push:
+       username: $DOCKER_USERNAME
+       password: $DOCKER_PASSWORD
+       tag: latest
+       repository: vitor-caetano/example
+       registry: https://registry.hub.docker.com
